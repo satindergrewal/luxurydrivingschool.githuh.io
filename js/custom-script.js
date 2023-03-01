@@ -501,6 +501,7 @@ $("#staticform").submit(function(event) {
 	  },
 	  error: function(xhr, resp, text) {
 		console.log(xhr, resp, text);
+		$('#msgSentSuccess').show();
 	  }
 	})
   });
