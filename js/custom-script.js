@@ -497,6 +497,7 @@ $("#staticform").submit(function(event) {
 		// you can see the result from the console
 		// tab of the developer tools
 		console.log(JSON.parse(result));
+		$('#msgSentSuccess').show();
 	  },
 	  error: function(xhr, resp, text) {
 		console.log(xhr, resp, text);
