@@ -496,10 +496,10 @@ $("#staticform").submit(function(event) {
 	  success: function(result) {
 		// you can see the result from the console
 		// tab of the developer tools
-		alert(JSON.parse(result));
+		console.log(JSON.parse(result));
 	  },
 	  error: function(xhr, resp, text) {
-		alert(xhr, resp, text);
+		console.log(xhr, resp, text);
 	  }
 	})
   });
