@@ -677,7 +677,7 @@ form .form-group{position:relative;margin-bottom:30px;}
                                 <div class="form-group">
                                     <div class="field-inner">
                                         <!-- reCAPTCHA widget -->
-                                        <div class="g-recaptcha" data-sitekey="6LdengArAAAAACWOwT41AX2Z9RXERUZPTJLFlaiX"></div>
+                                        <div class="g-recaptcha" data-sitekey="6LdqrAArAAAAAE6oH7O2336m_WGpXdFDS76g59mR"></div>
                                         
                                         <button type="submit" class="theme-btn btn-style-one"><span>SEND MESSAGE</span></button>
                                         
@@ -821,7 +821,7 @@ form .form-group{position:relative;margin-bottom:30px;}
     function onClick(e) {
       e.preventDefault();
       grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute('6LdengArAAAAACWOwT41AX2Z9RXERUZPTJLFlaiX', {action: 'LOGIN'});
+        const token = await grecaptcha.enterprise.execute('6LdqrAArAAAAAE6oH7O2336m_WGpXdFDS76g59mR', {action: 'LOGIN'});
       });
     }
   </script>
