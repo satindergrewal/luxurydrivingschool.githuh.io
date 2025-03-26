@@ -136,6 +136,8 @@ form .form-group{position:relative;margin-bottom:30px;}
 <link href="css/responsive.css" rel="stylesheet">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]--> 
 
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6LdengArAAAAACWOwT41AX2Z9RXERUZPTJLFlaiX"></script>
+
 </head>
 
 <body>
@@ -808,5 +810,15 @@ form .form-group{position:relative;margin-bottom:30px;}
     }
 
 </script>
+
+<script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.enterprise.ready(async () => {
+        const token = await grecaptcha.enterprise.execute('6LdengArAAAAACWOwT41AX2Z9RXERUZPTJLFlaiX', {action: 'LOGIN'});
+      });
+    }
+  </script>
+  
 </body>
 </html>
